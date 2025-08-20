@@ -1,0 +1,59 @@
+/* Centraliza a calculadora na tela */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Largura da calculadora */
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Estilo do visor */
+  .calculator-display {
+    background-color: #f1f5f9;
+    border: none;
+    font-size: 2.5em;
+    padding: 20px;
+    text-align: right;
+  }
+  
+  /* Estilo dos botões */
+  .calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+  }
+  
+  button {
+    background-color: #e2e8f0;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  /* Mudar a cor ao passar o mouse */
+  button:hover {
+    background-color: #cbd5e1;
+  }
+  
+  .operator {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .operator:hover {
+    background-color: #ea580c;
+  }
+  
+  .equals {
+    background-color: #16a34a;
+    color: white;
+  }
+  
+  .equals:hover {
+    background-color: #15803d;
+  }
